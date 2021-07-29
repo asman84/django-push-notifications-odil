@@ -1,4 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup
+def local_scheme(version):
+	return ""
 
-setup(use_scm_version={"version_scheme": "post-release"})
+setup(use_scm_version={"local_scheme": local_scheme})
